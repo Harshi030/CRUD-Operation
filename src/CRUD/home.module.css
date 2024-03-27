@@ -1,0 +1,169 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#nav{
+  height: 80px;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-bottom: 1px solid white;
+}
+
+#nav>a{
+  color: white;
+  font-size: 25px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+#nav>a:hover{
+  color: brown;
+  border-bottom: 3px solid brown;
+}
+
+#myForm{
+  background-color: black;
+  height: 89.2vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#myForm>form{
+  color:white;
+  height: 400px;
+  width: 500px;
+  border: 2px solid white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  font-size: 25px;
+  font-weight: bold;
+  background-color:black;
+}
+
+#myForm>form input{
+  font-size: 25px;
+  border-radius: 5px;
+  border: 1px  solid black;
+  box-shadow: 0px 0px 5px black;
+  outline: none;
+  
+}
+
+#myForm>form input:hover{
+  transform: scale(1.1);
+  transition: 0.5s;
+
+}
+
+#myForm button{
+  height: 40px;
+  width: 80px;
+  font-size: 13px;
+  padding: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color:white;
+  border: 1px solid black;
+  cursor: pointer;
+  border-radius: 50px;
+  color: black;
+  font-weight: bold;
+
+}
+
+#myForm button:hover{
+  transform: scale(1.1);
+  transition: 0.5s;
+  box-shadow: 0px 0px 10px white;
+  color: white;
+  background-color: brown;
+  border: none;
+}
+
+#cardContainer{
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items:center;
+  background-color: black;
+  flex-wrap: wrap;
+}
+
+#card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 300px;
+  width: 250px;
+  border: 1px solid white;
+  cursor: pointer;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+#card:hover{
+  transform: scale(1.1);
+  transition: 0.5s;
+  box-shadow: 0px 0px 10px white;
+}
+
+
+
+#card p{
+  color:whitesmoke;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+#card p::first-letter{
+  color: brown;
+}
+
+#card section button{
+  margin-left: 15px;
+  margin-top: 15px;
+  height: 30px;
+  width: 70px;
+  font-size: 13px;
+  padding: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color:white;
+  border: 1px solid black;
+  cursor: pointer;
+  border-radius: 50px;
+  color: black;
+  font-weight: bold;
+}
+
+#card section button:hover{
+  transform: scale(1.1);
+  transition: 0.5s;
+  box-shadow: 0px 0px 10px white;
+  color: white;
+  background-color: brown;
+  border: none;
+}
+
+
+@media (max-width: 768px) {
+  #cardContainer {
+    flex-direction: column;
+  }
+
+  #card {
+    margin: 20px 0;
+  }
+}
